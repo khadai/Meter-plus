@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:name="MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e3f2fd"
+    android:label="@string/app_name"
+    android:theme="@android:style/Theme.Black.NoTitleBar"
+    tools:context=".MainMenu">
+
+
+    <LinearLayout
+        android:id="@+id/buttonPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#e3f2fd"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/news_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:background="#388e3c"
+            android:fontFamily="sans-serif-light"
+            android:padding="30dp"
+            android:text="News"
+            android:textAllCaps="true"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:background="#388e3c"
+            android:fontFamily="sans-serif-light"
+            android:padding="7dp"
+            android:text="Statistic"
+            android:textAllCaps="true"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonPanel"
+        android:layout_weight="9"
+        android:background="#e3f2fd"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="20dp"
+            android:background="#388e3c"
+            android:fontFamily="sans-serif-light"
+            android:padding="30dp"
+            android:text="Online pay"
+            android:textAllCaps="true"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:background="#388e3c"
+            android:fontFamily="sans-serif-light"
+            android:padding="30dp"
+            android:text="Camera"
+            android:textAllCaps="true"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:background="#388e3c"
+            android:fontFamily="sans-serif-light"
+            android:padding="30dp"
+            android:text="Input manually"
+            android:textAllCaps="true"
+            android:textColor="#ffffff"
+            android:onClick="openInputManuallyMenu"
+            android:textSize="20dp" />
+    </LinearLayout>
+</RelativeLayout>

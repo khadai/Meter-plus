@@ -35,8 +35,8 @@ public class MainActivity extends AppCompatActivity {
 
         mBuilder = new android.support.v7.app.NotificationCompat.Builder(this);
         mBuilder.setSmallIcon(R.mipmap.ic_launcher); //set notification icon
-        mBuilder.setContentTitle("MISHA LOH Title"); //set notification title
-        mBuilder.setContentText("Oh Misha DAYN..."); //set notification content/detail
+        mBuilder.setContentTitle("Notification Title"); //set notification title
+        mBuilder.setContentText("Notification Detail..."); //set notification content/detail
 
 
         mResultIntent = new Intent (this, MainActivity.class);

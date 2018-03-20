@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.meter.PersonalInfoActivity">
+
+    <TextView
+        style="@style/HeaderTextStyle"
+        android:layout_margin="8dp"
+        android:text="Abonent`s name:" />
+
+    <TextView
+        android:id="@+id/actual_name"
+        style="@style/HeaderTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="not specified"
+        android:textColor="#000000" />
+
+    <TextView
+        style="@style/HeaderTextStyle"
+        android:layout_margin="8dp"
+        android:text="Abonent`s electricity code:" />
+
+    <TextView
+        android:id="@+id/actual_e_code"
+        style="@style/HeaderTextStyle"
+        android:layout_marginLeft="8dp"
+        android:text="not specified"
+        android:textColor="#000000" />
+    <Button
+       style="@style/ButtonStyle"
+        android:text="Make changes"
+        android:onClick="openAccountActivity"/>
+</LinearLayout>

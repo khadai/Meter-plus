@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:name="ManualElectricity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:label="@string/app_name"
+    android:orientation="vertical"
+    android:theme="@android:style/Theme.Black.NoTitleBar"
+    tools:context="com.example.android.meter.ManualElectricity">
+
+    <TextView
+        style="@style/HeaderTextStyle"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Input abonent`s code: " />
+
+    <EditText
+        android:id="@+id/electricity_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:hint="Type the code here"
+        android:inputType="number" />
+
+    <TextView
+        style="@style/HeaderTextStyle"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Input electricity measurement: " />
+
+    <EditText
+        android:id="@+id/electricity_measurement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:hint="Type the measurement here"
+        android:inputType="number" />
+
+    <Button
+        style="@style/ButtonStyle"
+        android:text="Sent measurement"
+        android:id="@+id/button_input_water"
+        android:onClick="sentMeasurement"/>
+
+</LinearLayout>
+
+

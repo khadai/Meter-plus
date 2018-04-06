@@ -17,23 +17,23 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:paddingLeft="10dp"
-        android:text="Choose what to input: "
+        android:text="Виберіть що ввести: "
         android:textColor="#000000"/>
 
     <Button
         style="@style/ButtonStyle"
-        android:text="electricity"
+        android:text="електрика"
         android:id="@+id/button_input_electricity"
-        android:onClick="openManuallElectricityMenu"/>
+        android:onClick="openManualElectricityMenu"/>
 
     <Button
         style="@style/ButtonStyle"
-        android:text="gas"
+        android:text="Газ"
         android:id="@+id/button_input_gas"/>
 
     <Button
         style="@style/ButtonStyle"
-        android:text="Water"
+        android:text="Вода"
         android:id="@+id/button_input_water" />
 
 

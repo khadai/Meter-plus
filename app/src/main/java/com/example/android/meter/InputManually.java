@@ -13,7 +13,7 @@ public class InputManually extends AppCompatActivity {
         setContentView(R.layout.activity_input_manually);
     }
 
-    public void openManuallElectricityMenu (View view){
+    public void openManualElectricityMenu (View view){
         Intent i = new Intent(this, ManualElectricity.class);
         startActivity(i);
     }

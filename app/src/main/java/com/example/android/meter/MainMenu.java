@@ -18,5 +18,9 @@ public class MainMenu extends AppCompatActivity {
         startActivity(i);
     }
 
+    public void openPersonalInfoActivity (View view){
+        Intent i = new Intent(this, PersonalInfoActivity.class);
+        startActivity(i);
+    }
 
 }

@@ -10,7 +10,7 @@
     <TextView
         style="@style/HeaderTextStyle"
         android:layout_margin="8dp"
-        android:text="Abonent`s name:" />
+        android:text="Ім'я абонента:" />
 
     <TextView
         android:id="@+id/actual_name"
@@ -18,22 +18,43 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        android:text="not specified"
+        android:text="не вказане"
         android:textColor="#000000" />
 
     <TextView
         style="@style/HeaderTextStyle"
         android:layout_margin="8dp"
-        android:text="Abonent`s electricity code:" />
-
+        android:text="№ ос.рахунку електрики:" />
     <TextView
         android:id="@+id/actual_e_code"
         style="@style/HeaderTextStyle"
         android:layout_marginLeft="8dp"
-        android:text="not specified"
+        android:text="не вказаний"
+        android:textColor="#000000" />
+
+    <TextView
+        style="@style/HeaderTextStyle"
+        android:layout_margin="8dp"
+        android:text="№ ос.рахунку газу:" />
+    <TextView
+        android:id="@+id/actual_g_code"
+        style="@style/HeaderTextStyle"
+        android:layout_marginLeft="8dp"
+        android:text="не вказаний"
+        android:textColor="#000000" />
+
+    <TextView
+        style="@style/HeaderTextStyle"
+        android:layout_margin="8dp"
+        android:text="№ ос.рахунку води:" />
+    <TextView
+        android:id="@+id/actual_w_code"
+        style="@style/HeaderTextStyle"
+        android:layout_marginLeft="8dp"
+        android:text="не вказаний"
         android:textColor="#000000" />
     <Button
        style="@style/ButtonStyle"
-        android:text="Make changes"
+        android:text="Змінити"
         android:onClick="openAccountActivity"/>
 </LinearLayout>

@@ -79,6 +79,7 @@ public class PersonalInfoActivity extends AppCompatActivity {
                 });
         editText.setInputType(8192);
         dialog.show();
+
     }
 
 
@@ -165,5 +166,6 @@ public class PersonalInfoActivity extends AppCompatActivity {
                 });
         editText.setInputType(2);
         dialog.show();
+
     }
 }

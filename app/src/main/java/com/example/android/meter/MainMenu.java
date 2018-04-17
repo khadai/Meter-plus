@@ -5,6 +5,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.android.meter.inputManually.InputManually;
+import com.example.android.meter.personalCab.PersonalInfoActivity;
+
 public class MainMenu extends AppCompatActivity {
 
     @Override

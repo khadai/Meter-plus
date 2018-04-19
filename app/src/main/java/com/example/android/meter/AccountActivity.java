@@ -1,4 +1,4 @@
-package com.example.android.meter.personalCab;
+package com.example.android.meter;
 
 import android.content.Context;
 import android.content.Intent;
@@ -10,8 +10,6 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import com.example.android.meter.R;
 
 import java.util.prefs.Preferences;
 
@@ -33,8 +31,8 @@ public class AccountActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_account);
 
-        hasName = findViewById(R.id.user_name);
-        codeElectricity = findViewById(R.id.electricity_code);
+        hasName = (EditText) findViewById(R.id.user_name);
+        codeElectricity = (EditText) findViewById(R.id.electricity_code);
     }
 
     public void saveInfo(View view) {
@@ -45,7 +43,7 @@ public class AccountActivity extends AppCompatActivity {
         editor.putString("userECode", codeElectricity.getText().toString());
         editor.apply();
 
-        Toast.makeText(this, "Збережено", Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "Saved", Toast.LENGTH_LONG).show();
     }
 
     public String showInfo(View view) {
@@ -53,7 +51,7 @@ public class AccountActivity extends AppCompatActivity {
                 Context.MODE_PRIVATE);
         String name = sharedPref.getString("username", "");
         String eCode = sharedPref.getString("userECode", "");
-        Toast.makeText(this, new StringBuilder().append(name).append(" ").append(eCode).toString(),
+        Toast.makeText(this,new StringBuilder().append(name).append(" ").append(eCode).toString(),
                 Toast.LENGTH_LONG).show();
         return new StringBuilder().append(name).append(" ").append(eCode).toString();
     }

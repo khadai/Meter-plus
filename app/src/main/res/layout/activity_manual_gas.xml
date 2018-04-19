@@ -1,13 +1,12 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:name="ManualElectricity"
+    android:name="ManualGas"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:label="@string/app_name"
     android:orientation="vertical"
     android:theme="@android:style/Theme.Black.NoTitleBar"
-    tools:context="com.example.android.meter.ManualElectricity">
+    tools:context="com.example.android.meter.inputManually.ManualElectricity">
 
 
     <TextView
@@ -17,19 +16,16 @@
         android:text="Введіть показ: " />
 
     <EditText
-        android:id="@+id/electricity_measurement"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
+        android:id="@+id/gas_measurement"
+        style="@style/EditTextStyle"
         android:hint="Введіть показ сюди"
         android:inputType="number" />
 
     <Button
+        android:id="@+id/button_input_gas"
         style="@style/ButtonStyle"
-        android:text="Відправити"
-        android:id="@+id/button_input_water"
-        android:onClick="sentMeasurement"/>
+        android:onClick="sentMeasurement"
+        android:text="Відправити" />
 
 </LinearLayout>
 

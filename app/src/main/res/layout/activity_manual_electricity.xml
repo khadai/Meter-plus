@@ -4,10 +4,9 @@
     android:name="ManualElectricity"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:label="@string/app_name"
     android:orientation="vertical"
     android:theme="@android:style/Theme.Black.NoTitleBar"
-    tools:context="com.example.android.meter.ManualElectricity">
+    tools:context="com.example.android.meter.inputManually.ManualElectricity">
 
     <TextView
         style="@style/HeaderTextStyle"
@@ -22,7 +21,7 @@
         android:inputType="number" />
 
     <Button
-        android:id="@+id/button_input_water"
+        android:id="@+id/button_input_electricity"
         style="@style/ButtonStyle"
         android:onClick="sentMeasurement"
         android:text="Надіслати показ" />

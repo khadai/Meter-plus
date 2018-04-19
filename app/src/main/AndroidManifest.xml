@@ -17,6 +17,12 @@
             </intent-filter>
         </activity>
         <activity
+<<<<<<< HEAD
+=======
+            android:name=".inputManually.InputManually"
+            android:label="Ввести вручну" />
+        <activity
+>>>>>>> 455a96503fc20ad0f8f195a41d278c0782dc44aa
             android:name=".inputManually.ManualElectricity"
             android:label="Ввести показ електроенергії" />
         <activity

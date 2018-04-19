@@ -5,9 +5,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+<<<<<<< HEAD
 import com.example.android.meter.inputManually.ManualElectricity;
 import com.example.android.meter.inputManually.ManualGas;
 import com.example.android.meter.inputManually.ManualWater;
+=======
+import com.example.android.meter.inputManually.InputManually;
+>>>>>>> 455a96503fc20ad0f8f195a41d278c0782dc44aa
 import com.example.android.meter.personalCab.PersonalInfoActivity;
 
 public class MainMenu extends AppCompatActivity {

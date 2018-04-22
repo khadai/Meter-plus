@@ -10,7 +10,7 @@ public class InputManually extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_input_manually);
+        setContentView(R.layout.activity_alarm);
     }
 
     public void openManuallElectricityMenu (View view){

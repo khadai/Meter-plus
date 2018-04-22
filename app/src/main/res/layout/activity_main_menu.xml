@@ -5,8 +5,7 @@
     android:name="MainActivity"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#e3f2fd"
-    android:label="@string/app_name"
+    android:background="@drawable/background"
     android:theme="@android:style/Theme.Black.NoTitleBar"
     tools:context=".MainMenu">
 
@@ -15,37 +14,39 @@
         android:id="@+id/buttonPanel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:background="#e3f2fd"
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/news_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
+            android:id="@+id/button_personal_page"
+            android:layout_width="52dp"
+            android:layout_height="50dp"
             android:layout_margin="20dp"
-            android:layout_weight="1"
-            android:background="#388e3c"
-            android:fontFamily="sans-serif-light"
-            android:padding="30dp"
-            android:text="News"
-            android:textAllCaps="true"
-            android:textColor="#ffffff"
-            android:textSize="20dp" />
+            android:background="@drawable/personalpagebutton" />
+
+
+        <Space
+            android:layout_width="75dp"
+            android:layout_height="32dp"
+            />
+
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="161dp"
+            app:srcCompat="@drawable/logo" />
+
+        <Space
+            android:layout_width="40dp"
+            android:layout_height="32dp"
+            />
+
+
 
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:id="@+id/button_bell"
+            android:layout_width="50dp"
+            android:layout_height="52dp"
             android:layout_margin="20dp"
-            android:layout_weight="1"
-            android:background="#388e3c"
-            android:fontFamily="sans-serif-light"
-            android:padding="7dp"
-            android:text="Statistic"
-            android:textAllCaps="true"
-            android:textColor="#ffffff"
-            android:textSize="20sp" />
+            android:background="@drawable/bellbutton" />
 
     </LinearLayout>
 
@@ -53,51 +54,32 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/buttonPanel"
-        android:layout_weight="9"
-        android:background="#e3f2fd"
         android:orientation="vertical">
 
         <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_margin="20dp"
-            android:background="#388e3c"
-            android:fontFamily="sans-serif-light"
-            android:padding="30dp"
-            android:text="Online pay"
-            android:textAllCaps="true"
-            android:textColor="#ffffff"
-            android:textSize="20dp" />
+            android:id="@+id/button_elect"
+            android:layout_width="320dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/buttonelectrgray"
+            />
 
         <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_margin="20dp"
-            android:layout_weight="1"
-            android:background="#388e3c"
-            android:fontFamily="sans-serif-light"
-            android:padding="30dp"
-            android:text="Camera"
-            android:textAllCaps="true"
-            android:textColor="#ffffff"
-            android:textSize="20dp" />
+            android:id="@+id/button_water"
+            android:layout_width="320dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/buttonwatergray" />
 
         <Button
-            android:id="@+id/button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_margin="20dp"
-            android:layout_weight="1"
-            android:background="#388e3c"
-            android:fontFamily="sans-serif-light"
-            android:padding="30dp"
-            android:text="Input manually"
-            android:textAllCaps="true"
-            android:textColor="#ffffff"
-            android:onClick="openInputManuallyMenu"
-            android:textSize="20dp" />
+            android:id="@+id/button_gas"
+            android:layout_width="320dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/buttongasgray"
+            />
     </LinearLayout>
 </RelativeLayout>

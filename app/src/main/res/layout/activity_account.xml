@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:name="AccountActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:theme="@android:style/Theme.Black.NoTitleBar"
+    tools:context="com.example.android.meter.personalCab.AccountActivity">
+
+    <TextView
+        style="@style/HeaderTextStyle"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Введіть повне ім'я абонента: " />
+
+
+    <EditText
+        android:id="@+id/user_name"
+        style="@style/EditTextStyle"
+        android:hint="Петренко Андрій Андрійович"/>
+
+    <TextView
+        style="@style/HeaderTextStyle"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Введіть № ос.рахунку електрики:" />
+    <EditText
+        android:id="@+id/electricity_code"
+        style="@style/EditTextStyle"
+        android:hint="Введіть номер сюди "
+        android:inputType="number" />
+
+
+    <TextView
+        style="@style/HeaderTextStyle"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Введіть № ос.рахунку газу:" />
+    <EditText
+        android:id="@+id/gas_code"
+        style="@style/EditTextStyle"
+        android:hint="Введіть номер сюди "
+        android:inputType="number" />
+
+    <TextView
+        style="@style/HeaderTextStyle"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Введіть № ос.рахунку води:" />
+    <EditText
+        android:id="@+id/water_code"
+        style="@style/EditTextStyle"
+        android:hint="Введіть номер сюди "
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/button_set_values"
+        style="@style/ButtonStyle"
+        android:onClick="saveInfo"
+        android:text="Зберегти зміни" />
+
+</LinearLayout>

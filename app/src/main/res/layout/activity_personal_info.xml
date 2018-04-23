@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.meter.personalCab.PersonalInfoActivity">
+
+    <TextView
+        style="@style/HeaderTextStyle"
+        android:layout_margin="8dp"
+        android:text="Ім'я абонента:" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/actual_name"
+            style="@style/HeaderTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="не вказане"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/change_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:onClick="changeActualName"
+            android:padding="10dp"
+            android:text="Змінити" />
+    </LinearLayout>
+
+    <TextView
+        style="@style/HeaderTextStyle"
+        android:layout_margin="8dp"
+        android:text="№ ос.рахунку електрики:" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/actual_e_code"
+            style="@style/HeaderTextStyle"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:text="не вказаний"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/change_e_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:onClick="changeActualECode"
+            android:padding="10dp"
+            android:text="Змінити" />
+    </LinearLayout>
+
+    <TextView
+        style="@style/HeaderTextStyle"
+        android:layout_margin="8dp"
+        android:text="№ ос.рахунку газу:" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/actual_g_code"
+            style="@style/HeaderTextStyle"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:text="не вказаний"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/change_g_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:onClick="changeActualGCode"
+            android:padding="10dp"
+            android:text="Змінити" />
+    </LinearLayout>
+
+    <TextView
+        style="@style/HeaderTextStyle"
+        android:layout_margin="8dp"
+        android:text="№ ос.рахунку води:" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/actual_w_code"
+            style="@style/HeaderTextStyle"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:text="не вказаний"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/change_w_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:onClick="changeActualWCode"
+            android:padding="10dp"
+            android:text="Змінити" />
+    </LinearLayout>
+</LinearLayout>

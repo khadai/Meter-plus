@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Meter.iml" filepath="$PROJECT_DIR$/Meter.iml" />
+      <module fileurl="file://D:\AS projects\Meter-plus-b405cbdfd5d9d7f3a05f9a5f9c1afc86ec19ee55\Meter.iml" filepath="D:\AS projects\Meter-plus-b405cbdfd5d9d7f3a05f9a5f9c1afc86ec19ee55\Meter.iml" />
+      <module fileurl="file://D:\AS projects\Meter-plus-b405cbdfd5d9d7f3a05f9a5f9c1afc86ec19ee55\Meter-plus.iml" filepath="D:\AS projects\Meter-plus-b405cbdfd5d9d7f3a05f9a5f9c1afc86ec19ee55\Meter-plus.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Meter-plus-b405cbdfd5d9d7f3a05f9a5f9c1afc86ec19ee55.iml" filepath="$PROJECT_DIR$/Meter-plus-b405cbdfd5d9d7f3a05f9a5f9c1afc86ec19ee55.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://D:\AS projects\Meter-plus-b405cbdfd5d9d7f3a05f9a5f9c1afc86ec19ee55\app\app.iml" filepath="D:\AS projects\Meter-plus-b405cbdfd5d9d7f3a05f9a5f9c1afc86ec19ee55\app\app.iml" />
     </modules>
   </component>
 </project>

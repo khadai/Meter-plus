@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:name="MainActivity"
@@ -10,6 +10,10 @@
     android:orientation="vertical"
     android:theme="@android:style/Theme.Black.NoTitleBar"
     tools:context=".MainMenu">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -25,6 +29,7 @@
             android:text="Персональний кабінет"
             android:textSize="10sp" />
 
+
         <Button
             android:id="@+id/news_button"
             style="@style/ButtonStyle"
@@ -37,15 +42,31 @@
 
     </LinearLayout>
 
+    <TextView
+        style="@style/HeaderTextStyle"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:paddingLeft="10dp"
+        android:text="Виберіть що ввести: "
+        android:textColor="#000000"/>
 
     <Button
         style="@style/ButtonStyle"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:padding="20dp"
-        android:text="Статистика"
-        android:textSize="20sp" />
+        android:text="електрика"
+        android:id="@+id/button_input_electricity"
+        android:onClick="openManualElectricityMenu"/>
 
+    <Button
+        style="@style/ButtonStyle"
+        android:text="Газ"
+        android:id="@+id/button_input_gas"
+        android:onClick="openManualGasMenu"/>
+
+    <Button
+        style="@style/ButtonStyle"
+        android:text="Вода"
+        android:id="@+id/button_input_water"
+        android:onClick="openManualWaterMenu"/>
 
     <Button
         style="@style/ButtonStyle"
@@ -53,15 +74,7 @@
         android:padding="20dp"
         android:text="Камера"
         android:textSize="20sp" />
-
-    <Button
-        android:id="@+id/button_input"
-        style="@style/ButtonStyle"
-        android:layout_height="wrap_content"
-        android:onClick="openInputManuallyMenu"
-        android:padding="20dp"
-        android:text="Ввести вручну"
-        android:textSize="20sp" />
-
-
 </LinearLayout>
+
+
+</ScrollView>

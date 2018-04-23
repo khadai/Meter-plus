@@ -46,10 +46,6 @@ public class PersonalInfoActivity extends AppCompatActivity {
         aWCode.setText(sharedPref.getString("WCode", "Не вказаний"));
     }
 
-    public void openAccountActivity(View view) {
-        Intent i = new Intent(this, AccountActivity.class);
-        startActivity(i);
-    }
 
     public void changeActualName(View view) {
 

@@ -12,52 +12,31 @@
         style="@style/HeaderTextStyle"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
-        android:text="Введіть повне ім'я абонента: " />
+        android:text="Input abonent`s full name " />
 
 
     <EditText
         android:id="@+id/user_name"
         style="@style/EditTextStyle"
-        android:hint="Петренко Андрій Андрійович"/>
+        android:hint="Type the full name here"/>
 
     <TextView
         style="@style/HeaderTextStyle"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
-        android:text="Введіть № ос.рахунку електрики:" />
+        android:text="Input abonent`s code: " />
+
+
     <EditText
         android:id="@+id/electricity_code"
         style="@style/EditTextStyle"
-        android:hint="Введіть номер сюди "
-        android:inputType="number" />
-
-
-    <TextView
-        style="@style/HeaderTextStyle"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:text="Введіть № ос.рахунку газу:" />
-    <EditText
-        android:id="@+id/gas_code"
-        style="@style/EditTextStyle"
-        android:hint="Введіть номер сюди "
-        android:inputType="number" />
-
-    <TextView
-        style="@style/HeaderTextStyle"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:text="Введіть № ос.рахунку води:" />
-    <EditText
-        android:id="@+id/water_code"
-        style="@style/EditTextStyle"
-        android:hint="Введіть номер сюди "
+        android:hint="Type the code here: "
         android:inputType="number" />
 
     <Button
         android:id="@+id/button_set_values"
         style="@style/ButtonStyle"
         android:onClick="saveInfo"
-        android:text="Зберегти зміни" />
+        android:text="Save changes" />
 
 </LinearLayout>

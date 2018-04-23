@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<<<<<<< HEAD
     xmlns:app="http://schemas.android.com/apk/res-auto"
+=======
+>>>>>>> 768540fc3b5e3c79143113aa70dcd315f5ff03ba
     xmlns:tools="http://schemas.android.com/tools"
     android:name="MainActivity"
     android:layout_width="match_parent"
@@ -17,31 +20,41 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <Button
-            android:id="@+id/personal_account_button"
-            style="@style/ButtonStyle"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:onClick="openPersonalInfoActivity"
-            android:padding="20dp"
-            android:text="Персональний кабінет"
-            android:textSize="10sp" />
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
+<<<<<<< HEAD
 
         <Button
             android:id="@+id/news_button"
             style="@style/ButtonStyle"
+=======
+        <LinearLayout
+            android:layout_width="match_parent"
+>>>>>>> 768540fc3b5e3c79143113aa70dcd315f5ff03ba
             android:layout_height="wrap_content"
-            android:padding="20dp"
-            android:layout_weight="1"
-            android:text="Сповіщення"
-            android:textSize="10sp" />
+            android:orientation="horizontal">
 
+            <Button
+                android:id="@+id/personal_account_button"
+                style="@style/ButtonStyle"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="openPersonalInfoActivity"
+                android:padding="20dp"
+                android:text="Персональний кабінет"
+                android:textSize="10sp" />
 
-    </LinearLayout>
+            <Button
+                android:id="@+id/news_button"
+                style="@style/ButtonStyle"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="20dp"
+                android:text="Сповіщення"
+                android:textSize="10sp" />
 
+<<<<<<< HEAD
     <TextView
         style="@style/HeaderTextStyle"
         android:layout_marginEnd="8dp"
@@ -75,6 +88,44 @@
         android:text="Камера"
         android:textSize="20sp" />
 </LinearLayout>
+=======
+        </LinearLayout>
 
+        <TextView
+            style="@style/HeaderTextStyle"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:paddingLeft="10dp"
+            android:text="Виберіть що ввести: "
+            android:textColor="#000000" />
 
+        <Button
+            android:id="@+id/button_input_electricity"
+            style="@style/ButtonStyle"
+            android:onClick="openManualElectricityMenu"
+            android:text="електрика" />
+
+        <Button
+            android:id="@+id/button_input_gas"
+            style="@style/ButtonStyle"
+            android:onClick="openManualGasMenu"
+            android:text="Газ" />
+>>>>>>> 768540fc3b5e3c79143113aa70dcd315f5ff03ba
+
+        <Button
+            android:id="@+id/button_input_water"
+            style="@style/ButtonStyle"
+            android:onClick="openManualWaterMenu"
+            android:text="Вода" />
+
+<<<<<<< HEAD
+=======
+        <Button
+            style="@style/ButtonStyle"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="Камера"
+            android:textSize="20sp" />
+    </LinearLayout>
+>>>>>>> 768540fc3b5e3c79143113aa70dcd315f5ff03ba
 </ScrollView>

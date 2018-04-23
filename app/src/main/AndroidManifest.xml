@@ -4,7 +4,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/logo"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
@@ -16,8 +16,32 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".InputManually" />
-        <activity android:name=".ManualElectricity"></activity>
+        <activity
+<<<<<<< HEAD
+            android:name=".inputManually.InputManually"
+            android:label="Ввести вручну" />
+        <activity
+=======
+<<<<<<< HEAD
+=======
+            android:name=".inputManually.InputManually"
+            android:label="Ввести вручну" />
+        <activity
+>>>>>>> 455a96503fc20ad0f8f195a41d278c0782dc44aa
+>>>>>>> 768540fc3b5e3c79143113aa70dcd315f5ff03ba
+            android:name=".inputManually.ManualElectricity"
+            android:label="Ввести показ електроенергії" />
+        <activity
+            android:name=".inputManually.ManualGas"
+            android:label="Ввести показ газу" />
+        <activity
+            android:name=".personalCab.AccountActivity"
+            android:label="Персональний кабінет" />
+        <activity
+            android:name=".personalCab.PersonalInfoActivity"
+            android:label="Особистий кабінет"/>
+        <activity android:name=".inputManually.ManualWater"
+            android:label="Ввести показ води"></activity>
     </application>
 
 </manifest>

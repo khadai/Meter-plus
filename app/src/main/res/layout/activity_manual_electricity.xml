@@ -4,46 +4,27 @@
     android:name="ManualElectricity"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:label="@string/app_name"
     android:orientation="vertical"
     android:theme="@android:style/Theme.Black.NoTitleBar"
-    tools:context="com.example.android.meter.ManualElectricity">
+    tools:context="com.example.android.meter.inputManually.ManualElectricity">
 
     <TextView
         style="@style/HeaderTextStyle"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
-        android:text="Input abonent`s code: " />
-
-    <EditText
-        android:id="@+id/electricity_code"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:hint="Type the code here"
-        android:inputType="number" />
-
-    <TextView
-        style="@style/HeaderTextStyle"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:text="Input electricity measurement: " />
+        android:text="Введіть показ: " />
 
     <EditText
         android:id="@+id/electricity_measurement"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:hint="Type the measurement here"
+        style="@style/EditTextStyle"
+        android:hint="Введіть показ сюди"
         android:inputType="number" />
 
     <Button
+        android:id="@+id/button_input_electricity"
         style="@style/ButtonStyle"
-        android:text="Sent measurement"
-        android:id="@+id/button_input_water"
-        android:onClick="sentMeasurement"/>
+        android:onClick="sentMeasurement"
+        android:text="Надіслати показ" />
 
 </LinearLayout>
 

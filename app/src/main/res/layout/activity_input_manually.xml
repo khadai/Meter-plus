@@ -6,10 +6,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#e3f2fd"
-    android:label="@string/app_name"
     android:orientation="vertical"
     android:theme="@android:style/Theme.Black.NoTitleBar"
-    tools:context=".InputManually">
+    tools:context=".inputManually.InputManually">
 
 
     <TextView
@@ -28,6 +27,18 @@
 
     <Button
         style="@style/ButtonStyle"
+<<<<<<< HEAD
+        android:text="Газ"
+        android:id="@+id/button_input_gas"
+        android:onClick="openManualGasMenu"/>
+
+    <Button
+        style="@style/ButtonStyle"
+        android:text="Вода"
+        android:id="@+id/button_input_water"
+        android:onClick="openManualWaterMenu"/>
+=======
+<<<<<<< HEAD
         android:text="gas"
         android:id="@+id/button_input_gas"/>
 
@@ -35,6 +46,18 @@
         style="@style/ButtonStyle"
         android:text="Water"
         android:id="@+id/button_input_water" />
+=======
+        android:text="Газ"
+        android:id="@+id/button_input_gas"
+        android:onClick="openManualGasMenu"/>
+
+    <Button
+        style="@style/ButtonStyle"
+        android:text="Вода"
+        android:id="@+id/button_input_water"
+        android:onClick="openManualWaterMenu"/>
+>>>>>>> 455a96503fc20ad0f8f195a41d278c0782dc44aa
+>>>>>>> 768540fc3b5e3c79143113aa70dcd315f5ff03ba
 
 
 </LinearLayout>

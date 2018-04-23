@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:name="ManualWater"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:theme="@android:style/Theme.Black.NoTitleBar"
+    tools:context="com.example.android.meter.inputManually.ManualElectricity">
+
+
+    <TextView
+        style="@style/HeaderTextStyle"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Введіть показ: " />
+
+    <EditText
+        android:id="@+id/water_measurement"
+        style="@style/EditTextStyle"
+        android:hint="Введіть показ сюди"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/button_input_water"
+        style="@style/ButtonStyle"
+        android:onClick="sentMeasurement"
+        android:text="Відправити" />
+
+</LinearLayout>
+
+

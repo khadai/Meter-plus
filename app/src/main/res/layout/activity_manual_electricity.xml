@@ -4,46 +4,52 @@
     android:name="ManualElectricity"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:label="@string/app_name"
+    android:background="@drawable/background"
     android:orientation="vertical"
     android:theme="@android:style/Theme.Black.NoTitleBar"
-    tools:context="com.example.android.meter.ManualElectricity">
+    tools:context="com.example.android.meter.inputManually.ManualElectricity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="296dp"
+        android:layout_height="71dp"
+        android:layout_marginLeft="47dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/textelectr" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="79dp" />
 
     <TextView
-        style="@style/HeaderTextStyle"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:text="Input abonent`s code: " />
-
-    <EditText
-        android:id="@+id/electricity_code"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
-        android:hint="Type the code here"
-        android:inputType="number" />
-
-    <TextView
-        style="@style/HeaderTextStyle"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:text="Input electricity measurement: " />
+        android:background="@drawable/inputmeasuretext"/>
 
     <EditText
         android:id="@+id/electricity_measurement"
+        style="@style/EditTextStyle"
+        android:hint="Введіть показ сюди"
+        android:inputType="number" />
+    <ImageView
+        android:id="@+id/imageView6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:hint="Type the measurement here"
-        android:inputType="number" />
+        app:srcCompat="@drawable/textyourmeasurelastmonth" />
 
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="56dp" />
     <Button
+        android:id="@+id/button_input_electricity"
         style="@style/ButtonStyle"
-        android:text="Sent measurement"
-        android:id="@+id/button_input_water"
-        android:onClick="sentMeasurement"/>
+        android:onClick="sentMeasurement"
+        android:layout_width="340dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/sendbutton"/>
 
 </LinearLayout>
 

@@ -1,62 +1,54 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:name="ManualElectricity"
+    android:name="ManualWater"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
     android:orientation="vertical"
     android:theme="@android:style/Theme.Black.NoTitleBar"
-    tools:context="com.example.android.meter.ManualElectricity">
+    tools:context="com.example.android.meter.inputManually.ManualElectricity">
 
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="296dp"
-        android:layout_height="72dp"
-        android:layout_marginLeft="47dp"
-        android:layout_marginTop="10dp"
-        app:srcCompat="@drawable/textwater" />
+    <TextView
+        style="@style/HeaderTextStyle"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Вода "
+        android:textColor="#FFFFFF"
+        android:textSize="34dp" />
 
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="79dp"
-        />
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/inputmeasuretext" />
+    <TextView
+        style="@style/HeaderTextStyle"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Введіть показ: "
+        android:textColor="#FFFFFF" />
 
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="match_parent"
-        android:layout_height="46dp"
-        app:srcCompat="@drawable/inputmeasurefield" />
+    <EditText
+        android:id="@+id/water_measurement"
+        style="@style/EditTextStyle"
+        android:hint="Введіть показ сюди"
+        android:inputType="number" />
 
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="58dp"
-        />
-
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/textyourmeasurelastmonth" />
+    <TextView
+        style="@style/HeaderTextStyle"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Ваш показ за минулий місяць: "
+        android:textColor="#FFFFFF" />
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="56dp"
-        />
+        android:layout_height="79dp" />
 
     <Button
-        android:id="@+id/button_send_water"
-        android:layout_width="340dp"
-        android:layout_height="60dp"
-        android:layout_marginLeft="30dp"
-        android:background="@drawable/sendbutton"/>
-
+        android:id="@+id/button_input_water"
+        style="@style/ButtonStyle"
+        android:layout_margin="10dp"
+        android:onClick="sentMeasurement"
+        android:text="Відправити" />
 </LinearLayout>
+
 

@@ -7,8 +7,7 @@
     android:background="@drawable/background"
     android:orientation="vertical"
     android:theme="@android:style/Theme.Black.NoTitleBar"
-    tools:context="com.example.android.meter.ManualElectricity">
-
+    tools:context="com.example.android.meter.inputManually.ManualElectricity">
 
     <ImageView
         android:id="@+id/imageView3"
@@ -20,24 +19,20 @@
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="79dp"/>
+        android:layout_height="79dp" />
 
-    <ImageView
-        android:id="@+id/imageView4"
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/inputmeasuretext" />
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/inputmeasuretext"/>
 
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="match_parent"
-        android:layout_height="46dp"
-        app:srcCompat="@drawable/inputmeasurefield" />
-
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="58dp"/>
-
+    <EditText
+        android:id="@+id/electricity_measurement"
+        style="@style/EditTextStyle"
+        android:hint="Введіть показ сюди"
+        android:inputType="number" />
     <ImageView
         android:id="@+id/imageView6"
         android:layout_width="match_parent"
@@ -47,9 +42,10 @@
     <Space
         android:layout_width="match_parent"
         android:layout_height="56dp" />
-
     <Button
-        android:id="@+id/button_send_elect"
+        android:id="@+id/button_input_electricity"
+        style="@style/ButtonStyle"
+        android:onClick="sentMeasurement"
         android:layout_width="340dp"
         android:layout_height="60dp"
         android:layout_marginLeft="30dp"

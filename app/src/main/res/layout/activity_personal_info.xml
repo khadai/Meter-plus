@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context="com.example.android.meter.PersonalInfoActivity">
+
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="161dp"
+            app:srcCompat="@drawable/logo"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="30dp"/>
+
+    <ImageView
+        android:layout_width="210dp"
+        android:layout_height="40dp"
+        android:background="@drawable/fullname"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/actual_name"
+            style="@style/HeaderTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="не вказане"
+            android:textColor="#ffff" />
+
+        <Button
+            android:id="@+id/change_name"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:background="@drawable/buttonpen"
+            android:onClick="changeActualName"
+            android:padding="10dp"
+            android:textColor="#ffff"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="450dp"
+        android:layout_height="40dp"
+        android:background="@drawable/numbermeterelectr"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/actual_e_code"
+            style="@style/HeaderTextStyle"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:text="не вказаний"
+            android:textColor="#ffff" />
+
+        <Button
+            android:id="@+id/change_e_code"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:background="@drawable/buttonpen"
+            android:onClick="changeActualName"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="450dp"
+        android:layout_height="40dp"
+        android:background="@drawable/numbermetergas"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/actual_g_code"
+            style="@style/HeaderTextStyle"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:text="не вказаний"
+            android:textColor="#ffff" />
+
+        <Button
+            android:id="@+id/change_g_code"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:background="@drawable/buttonpen"
+            android:onClick="changeActualName"
+            android:padding="10dp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="450dp"
+        android:layout_height="40dp"
+        android:background="@drawable/numbermeterwater"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/actual_w_code"
+            style="@style/HeaderTextStyle"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:text="не вказаний"
+            android:textColor="#ffff" />
+
+        <Button
+            android:id="@+id/change_w_code"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:background="@drawable/buttonpen"
+            android:onClick="changeActualName"
+            android:padding="10dp"/>
+    </LinearLayout>
+</LinearLayout>

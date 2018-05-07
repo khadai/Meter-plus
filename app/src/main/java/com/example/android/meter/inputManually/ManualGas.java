@@ -34,11 +34,13 @@ public class ManualGas extends AppCompatActivity {
     }
 
     public void sentMeasurement(View view) {
+
         SharedPreferences sharedPref = getSharedPreferences("UsersInfo",
                 Context.MODE_PRIVATE);
         String gCode = sharedPref.getString("GCode", "no code");
         String aName = sharedPref.getString("username", "no name");
         EditText gasMeasurement = findViewById(R.id.gas_measurement);
+
         hasGMeasure = gasMeasurement.getText().toString();
 
         if ((gCode.length() <= 1)) {
@@ -97,4 +99,26 @@ public class ManualGas extends AppCompatActivity {
         Intent intent = new Intent(getApplicationContext(), CameraPage.class);
         startActivity(intent);
     }
+
+    public void sendSMS(View view) {
+        SharedPreferences sharedPref = getSharedPreferences("UsersInfo",
+                Context.MODE_PRIVATE);
+        String gCode = sharedPref.getString("GCode", "no code");
+        String aName = sharedPref.getString("username", "no name");
+        EditText gasMeasurement = findViewById(R.id.gas_measurement);
+
+        hasGMeasure = gasMeasurement.getText().toString();
+
+        if ((gCode.length() <= 1)) {
+            dialogToInputInfo();
+        } else if ((gasMeasurement.length() <= 1)) {
+            dialogToInputMeasurement();
+        } else {
+            Uri uri = Uri.parse("smsto:7104");
+            Intent it = new Intent(Intent.ACTION_SENDTO, uri);
+            it.putExtra("sms_body", gCode + " " + hasGMeasure);
+            startActivity(it);
+        }
+    }
 }
+

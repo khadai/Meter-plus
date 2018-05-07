@@ -66,6 +66,7 @@
         android:layout_width="match_parent"
         android:layout_height="79dp" />
 
+
     <Button
         android:id="@+id/button_input_gas"
         style="@style/ButtonStyle"
@@ -73,6 +74,11 @@
         android:onClick="sentMeasurement"
         android:text="Відправити" />
 
+    <Button
+        style="@style/ButtonStyle"
+        android:layout_margin="10dp"
+        android:onClick="sendSMS"
+        android:text="SMS"/>
 </LinearLayout>
 
 

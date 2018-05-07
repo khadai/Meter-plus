@@ -35,8 +35,8 @@
             android:name="com.google.android.gms.vision.DEPENDENCIES"
             android:value="ocr" />
 
-        <activity android:name=".CameraPage"></activity>
-        <activity android:name=".AlarmActivity"></activity>
+        <activity android:name=".CameraPage" />
+        <activity android:name=".AlarmActivity" />
     </application>
 
 </manifest>

@@ -7,6 +7,7 @@ import android.view.View;
 
 import com.example.android.meter.inputManually.ManualElectricity;
 import com.example.android.meter.inputManually.ManualGas;
+import com.example.android.meter.inputManually.ManualWater;
 import com.example.android.meter.personalCab.PersonalInfoActivity;
 
 public class MainMenu extends AppCompatActivity {
@@ -25,7 +26,6 @@ public class MainMenu extends AppCompatActivity {
     public void onClickScanWithCamera(View v) {
         Intent intent = new Intent(getApplicationContext(), CameraPage.class);
         startActivity(intent);
-        finish();
     }
 
     public void openManualElectricityMenu(View view) {
@@ -39,7 +39,7 @@ public class MainMenu extends AppCompatActivity {
     }
 
     public void openManualWaterMenu(View view) {
-        Intent i = new Intent(this, com.example.android.meter.inputManually.ManualWater.class);
+        Intent i = new Intent(this, ManualWater.class);
         startActivity(i);
     }
 
@@ -47,4 +47,6 @@ public class MainMenu extends AppCompatActivity {
         Intent i = new Intent(this, AlarmActivity.class);
         startActivity(i);
     }
+
+
 }

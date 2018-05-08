@@ -5,9 +5,20 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+<<<<<<< HEAD
+import com.example.android.meter.inputManually.InputManually;
 import com.example.android.meter.inputManually.ManualElectricity;
 import com.example.android.meter.inputManually.ManualGas;
 import com.example.android.meter.inputManually.ManualWater;
+=======
+<<<<<<< HEAD
+import com.example.android.meter.inputManually.ManualElectricity;
+import com.example.android.meter.inputManually.ManualGas;
+import com.example.android.meter.inputManually.ManualWater;
+=======
+import com.example.android.meter.inputManually.InputManually;
+>>>>>>> 455a96503fc20ad0f8f195a41d278c0782dc44aa
+>>>>>>> 768540fc3b5e3c79143113aa70dcd315f5ff03ba
 import com.example.android.meter.personalCab.PersonalInfoActivity;
 
 public class MainMenu extends AppCompatActivity {
@@ -18,35 +29,24 @@ public class MainMenu extends AppCompatActivity {
         setContentView(R.layout.activity_main_menu);
     }
 
-    public void openPersonalInfoActivity(View view) {
+    public void openPersonalInfoActivity (View view){
         Intent i = new Intent(this, PersonalInfoActivity.class);
         startActivity(i);
     }
 
-    public void onClickScanWithCamera(View v) {
-        Intent intent = new Intent(getApplicationContext(), CameraPage.class);
-        startActivity(intent);
-    }
+        public void openManualElectricityMenu (View view){
+            Intent i = new Intent(this, ManualElectricity.class);
+            startActivity(i);
+        }
 
-    public void openManualElectricityMenu(View view) {
-        Intent i = new Intent(this, ManualElectricity.class);
-        startActivity(i);
-    }
+        public void openManualGasMenu(View view) {
+            Intent i = new Intent(this, ManualGas.class);
+            startActivity(i);
+        }
 
-    public void openManualGasMenu(View view) {
-        Intent i = new Intent(this, ManualGas.class);
-        startActivity(i);
-    }
-
-    public void openManualWaterMenu(View view) {
-        Intent i = new Intent(this, ManualWater.class);
-        startActivity(i);
-    }
-
-    public void openAlarmMenu(View view) {
-        Intent i = new Intent(this, AlarmActivity.class);
-        startActivity(i);
-    }
-
+        public void openManualWaterMenu(View view) {
+            Intent i = new Intent(this, ManualWater.class);
+            startActivity(i);
+        }
 
 }

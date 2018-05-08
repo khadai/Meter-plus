@@ -2,8 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.android.meter">
 
-    <uses-permission android:name="android.permission.CAMERA" />
-
     <application
         android:allowBackup="true"
         android:icon="@drawable/logo"
@@ -19,24 +17,31 @@
             </intent-filter>
         </activity>
         <activity
+<<<<<<< HEAD
+            android:name=".inputManually.InputManually"
+            android:label="Ввести вручну" />
+        <activity
+=======
+<<<<<<< HEAD
+=======
+            android:name=".inputManually.InputManually"
+            android:label="Ввести вручну" />
+        <activity
+>>>>>>> 455a96503fc20ad0f8f195a41d278c0782dc44aa
+>>>>>>> 768540fc3b5e3c79143113aa70dcd315f5ff03ba
             android:name=".inputManually.ManualElectricity"
             android:label="Ввести показ електроенергії" />
         <activity
             android:name=".inputManually.ManualGas"
             android:label="Ввести показ газу" />
         <activity
-            android:name=".personalCab.PersonalInfoActivity"
-            android:label="Особистий кабінет" />
+            android:name=".personalCab.AccountActivity"
+            android:label="Персональний кабінет" />
         <activity
-            android:name=".inputManually.ManualWater"
-            android:label="Ввести показ води" />
-
-        <meta-data
-            android:name="com.google.android.gms.vision.DEPENDENCIES"
-            android:value="ocr" />
-
-        <activity android:name=".CameraPage" />
-        <activity android:name=".AlarmActivity" />
+            android:name=".personalCab.PersonalInfoActivity"
+            android:label="Особистий кабінет"/>
+        <activity android:name=".inputManually.ManualWater"
+            android:label="Ввести показ води"></activity>
     </application>
 
 </manifest>

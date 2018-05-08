@@ -4,29 +4,81 @@
     android:name="ManualGas"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     android:orientation="vertical"
     android:theme="@android:style/Theme.Black.NoTitleBar"
-    tools:context="com.example.android.meter.inputManually.ManualElectricity">
+    tools:context="com.example.android.meter.inputManually.ManualGas">
+
+    <TextView
+        style="@style/HeaderTextStyle"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Газ "
+        android:textColor="#FFFFFF"
+        android:textSize="34dp" />
+
+    <TextView
+        android:id="@+id/store_activity_theme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="ppp"
+        android:textColor="@android:color/holo_blue_bright"
+        android:textSize="35dp" />
 
 
     <TextView
         style="@style/HeaderTextStyle"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
-        android:text="Введіть показ: " />
+        android:text="Введіть показ: "
+        android:textColor="#FFFFFF" />
 
-    <EditText
-        android:id="@+id/gas_measurement"
-        style="@style/EditTextStyle"
-        android:hint="Введіть показ сюди"
-        android:inputType="number" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/gas_measurement"
+            style="@style/EditTextStyle"
+            android:layout_weight="8"
+            android:hint="Введіть показ сюди"
+            android:inputType="number" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClickScanWithCamera"
+            android:text="камера" />
+    </LinearLayout>
+
+
+    <TextView
+        style="@style/HeaderTextStyle"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Ваш показ за минулий місяць: "
+        android:textColor="#FFFFFF" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="79dp" />
+
 
     <Button
         android:id="@+id/button_input_gas"
         style="@style/ButtonStyle"
+        android:layout_margin="10dp"
         android:onClick="sentMeasurement"
         android:text="Відправити" />
 
+    <Button
+        style="@style/ButtonStyle"
+        android:layout_margin="10dp"
+        android:onClick="sendSMS"
+        android:text="SMS"/>
 </LinearLayout>
 
 

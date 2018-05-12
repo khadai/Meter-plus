@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Meter-plus-ostap2.iml" filepath="$PROJECT_DIR$/Meter-plus-ostap2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Meter-plus.iml" filepath="$PROJECT_DIR$/Meter-plus.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

@@ -87,14 +87,6 @@
                 android:background="@drawable/buttonwatergray"
                 android:onClick="openManualWaterMenu" />
 
-            <Button
-                style="@style/ButtonStyle"
-                android:layout_height="wrap_content"
-                android:background="@color/colorPrimary"
-                android:onClick="onClickScanWithCamera"
-                android:padding="10dp"
-                android:text="Камера"
-                android:textSize="20sp" />
         </LinearLayout>
 
     </ScrollView>

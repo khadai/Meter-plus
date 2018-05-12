@@ -1,103 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:name="MainActivity"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#e3f2fd"
+    android:background="@drawable/background"
     android:label="@string/app_name"
+    android:orientation="vertical"
     android:theme="@android:style/Theme.Black.NoTitleBar"
     tools:context=".MainMenu">
 
 
     <LinearLayout
-        android:id="@+id/buttonPanel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:background="#e3f2fd"
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/news_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
+            android:id="@+id/personal_account_button"
+            android:layout_width="25dp"
+            android:layout_height="50dp"
             android:layout_margin="20dp"
             android:layout_weight="1"
-            android:background="#388e3c"
-            android:fontFamily="sans-serif-light"
-            android:padding="30dp"
-            android:text="News"
-            android:textAllCaps="true"
-            android:textColor="#ffffff"
-            android:textSize="20dp" />
+            android:background="@drawable/personalpagebutton"
+            android:onClick="openPersonalInfoActivity"
+            android:padding="20dp" />
+
+
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="161dp"
+            app:srcCompat="@drawable/logo" />
 
         <Button
+            android:id="@+id/news_button"
+            style="@style/ButtonStyle"
+            android:layout_width="50dp"
+            android:layout_height="52dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/bellbutton"
+            android:onClick="openAlarmMenu"
+            android:padding="20dp"
+
+            android:text="Сповіщення"
+            android:textSize="10sp" />
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_margin="20dp"
-            android:layout_weight="1"
-            android:background="#388e3c"
-            android:fontFamily="sans-serif-light"
-            android:padding="7dp"
-            android:text="Statistic"
-            android:textAllCaps="true"
-            android:textColor="#ffffff"
-            android:textSize="20sp" />
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal">
 
-    </LinearLayout>
+            <Button
+                android:id="@+id/button_input_electricity"
+                style="@style/ButtonStyle"
+                android:layout_width="320dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/buttonelectrgray"
+                android:onClick="openManualElectricityMenu" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/buttonPanel"
-        android:layout_weight="9"
-        android:background="#e3f2fd"
-        android:orientation="vertical">
+            <Button
+                android:id="@+id/button_input_gas"
+                style="@style/ButtonStyle"
+                android:layout_width="320dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/buttongasgray"
+                android:onClick="openManualGasMenu" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_margin="20dp"
-            android:background="#388e3c"
-            android:fontFamily="sans-serif-light"
-            android:padding="30dp"
-            android:text="Online pay"
-            android:textAllCaps="true"
-            android:textColor="#ffffff"
-            android:textSize="20dp" />
+            <Button
+                android:id="@+id/button_input_water"
+                style="@style/ButtonStyle"
+                android:layout_width="320dp"
+                android:layout_height="90dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/buttonwatergray"
+                android:onClick="openManualWaterMenu" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_margin="20dp"
-            android:layout_weight="1"
-            android:background="#388e3c"
-            android:fontFamily="sans-serif-light"
-            android:padding="30dp"
-            android:text="Camera"
-            android:textAllCaps="true"
-            android:textColor="#ffffff"
-            android:textSize="20dp" />
+            <Button
+                style="@style/ButtonStyle"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:onClick="onClickScanWithCamera"
+                android:padding="10dp"
+                android:text="Камера"
+                android:textSize="20sp" />
+        </LinearLayout>
 
-        <Button
-            android:id="@+id/button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_margin="20dp"
-            android:layout_weight="1"
-            android:background="#388e3c"
-            android:fontFamily="sans-serif-light"
-            android:padding="30dp"
-            android:text="Input manually"
-            android:textAllCaps="true"
-            android:textColor="#ffffff"
-            android:onClick="openInputManuallyMenu"
-            android:textSize="20dp" />
-    </LinearLayout>
-</RelativeLayout>
+    </ScrollView>
+</LinearLayout>
+

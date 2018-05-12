@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:name="ManualWater"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:theme="@android:style/Theme.Black.NoTitleBar"
+    tools:context="com.example.android.meter.inputManually.ManualElectricity">
+
+
+    <TextView
+        style="@style/HeaderTextStyle"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Вода "
+        android:textColor="#FFFFFF"
+        android:textSize="34dp" />
+
+
+    <TextView
+        style="@style/HeaderTextStyle"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Введіть показ: "
+        android:textColor="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/water_measurement"
+        style="@style/EditTextStyle"
+        android:hint="Введіть показ сюди"
+        android:inputType="number" />
+
+    <TextView
+        style="@style/HeaderTextStyle"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Ваш показ за минулий місяць: "
+        android:textColor="#FFFFFF" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="79dp" />
+
+    <Button
+        android:id="@+id/button_input_water"
+        style="@style/ButtonStyle"
+        android:layout_margin="10dp"
+        android:onClick="sentMeasurement"
+        android:text="Відправити" />
+</LinearLayout>
+
+

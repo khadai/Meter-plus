@@ -1,11 +1,15 @@
-<resources>
+        <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent = "Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimary">#46c4c4</item>
+        <item name="colorPrimaryDark">#3e9ca9</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="actionModeBackground">@color/colorPrimary</item>
+        <item name="actionBarPopupTheme">@style/ThemeOverlay.AppCompat</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionModeOverlay">true</item>
     </style>
 
     <style name="HeaderTextStyle">
@@ -21,11 +25,17 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">48dp</item>
         <item name ="android:layout_alignParentLeft">true</item>
-        <item name="android:layout_margin">20dp</item>
-        <item name="android:background">#388e3c</item>
+        <item name="android:background">@color/colorPrimary</item>
         <item name="android:fontFamily">sans-serif-light</item>
         <item name="android:textAllCaps">true</item>
         <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="EditTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
     </style>
 
 </resources>

@@ -84,12 +84,14 @@
 
             <Button
                 style="@style/ButtonStyle"
-                android:layout_height="wrap_content"
-                android:background="@color/colorPrimary"
+                android:layout_height="90dp"
+                android:layout_width="90dp"
+                android:layout_marginLeft="110dp"
+                android:background="@drawable/cam"
+                android:backgroundTint="@color/colorPrimaryDark"
                 android:onClick="onClickScanWithCamera"
                 android:padding="10dp"
-                android:text="Камера"
-                android:textSize="20sp" />
+                />
         </LinearLayout>
 
     </ScrollView>

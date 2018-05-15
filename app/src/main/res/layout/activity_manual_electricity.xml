@@ -22,17 +22,31 @@
         android:layout_height="79dp" />
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="370dp"
+        android:layout_height="27dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:background="@drawable/inputmeasuretext"/>
 
-    <EditText
-        android:id="@+id/electricity_measurement"
-        style="@style/EditTextStyle"
-        android:hint="Введіть показ сюди"
-        android:inputType="number" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:id="@+id/electricity_measurement"
+            style="@style/EditTextStyle"
+            android:hint="Введіть показ сюди"
+            android:inputType="number" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/cam"/>
+
+    </LinearLayout>
+
+
     <ImageView
         android:id="@+id/imageView6"
         android:layout_width="match_parent"
@@ -41,14 +55,15 @@
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="56dp" />
+        android:layout_height="60dp" />
+
     <Button
         android:id="@+id/button_input_electricity"
         style="@style/ButtonStyle"
         android:onClick="sentMeasurement"
-        android:layout_width="340dp"
+        android:layout_width="300dp"
         android:layout_height="60dp"
-        android:layout_marginLeft="30dp"
+        android:layout_marginLeft="45dp"
         android:background="@drawable/sendbutton"/>
 
 </LinearLayout>

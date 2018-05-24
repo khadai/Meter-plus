@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">METER+</string>
+    <string name="txt_message">No Text Available</string>
+
+    <string name="title_activity_demo_meter_reading">DemoMeterReadingActivity</string>
+    <string name="title_activity_extended_meter_reading">ExtendedMeterReadingActivity</string>
+    <string name="title_button_cancel">Cancel</string>
+    <string name="title_button_ok">OK</string>
+    <string name="title_button_turn_torch_on">Turn light on</string>
+    <string name="title_button_turn_torch_off">Turn light off</string>
+    <string name="title_button_sdk_fullscreen">Standard SDK Full Screen Activity</string>
+    <string name="title_button_subclass_of_fullscreen">Custom Subclass of SDK Full Screen Activity</string>
+    <string name="title_button_custom_activity_with_fragment">Custom Activity with SDK Fragment</string>
+    <string name="title_button_custom_activity_with_meterreadingview">Custom Activity with MeterReadingView</string>
+    <string name="title_button_sdk_regionofinterest">Region of Interest</string>
+    <string name="title_button_barcode_activity">Barcode/QR-Code Reading</string>
+    <string name="title_button_edl21_reader_activity">Digital EDL21 Meter with OBIS Code</string>
+    <string name="textview_headline">pixometer SDK</string>
+    <string name="textview_copyright">© 2015&#8211;2017 pixolus GmbH\n</string>
+    <string name="textview_version_placeholder">Version X.Y.Z (XYZ)</string>
+    <string name="textview_label_integer_digits">Integer\nDigits:</string>
+    <string name="textview_label_fraction_digits">Fraction\nDigits:</string>
+    <string name="textview_label_counters">Counters:</string>
+    <string name="textview_label_zoom">Zoom:</string>
+    <string name="textview_zoom_value">1.0</string>
+    <string name="textview_reading_hint">"The “Custom Activity with SDK Fragment” allows to modify meter reading parameters.\nMost other demo variants expect mechanical meters with white digits on black rollers. You need to edit the code in order to configure reading of different meter types."</string>
+    <string name="permission_camera_rationale">Camera permission is needed for automatic meter reading.</string>
+    <string name="permissions_not_granted">Permission was not granted</string>
+    <string name="title_activity_region_of_interest">RegionOfInterestActivity</string>
+    <string name="title_activity_barcode_reading">BarcodeReadingActivity</string>
+    <string name="title_activity_edl21_reading">EDL21MeterReadingActivity</string>
+
+    <string name="textview_meter_type">Meter Type:</string>
+    <string name="textview_barcode_type">Barcode Types:</string>
+
+    <string name="textview_selected_barcode_formats">%d formats</string>
+
+    <string name="no_reading_yet">No reading yet.</string>
+    <string name="no_barcode_yet">No barcode yet.</string>
+
+    <string name="result_barcode_format">Barcode: %s</string>
+    <string name="result_reading_format">%s</string>
+
+    <string name="checkbox_torch">Torch</string>
+
+    <string name="title_dialog_select_meter_type">Select meter type:</string>
+    <string name="title_radiobutton_mechanical_white">Black Text</string>
+    <string name="title_radiobutton_mechanical_black">White Text</string>
+    <string name="title_radiobutton_lcd">LCD</string>
+    <string name="title_radiobutton_lcd_edl21">EDL21</string>
+    <string name="title_radiobutton_mechanical_black_or_lcd_edl21">White Text / EDL21</string>
+
+    <string name="textview_label_barcode_format">Format:</string>
+    <string name="textview_label_barcode_value">Value:</string>
+
+    <string-array name="selectedBarcodeFormats">
+        <item>ean_13</item>
+        <item>code_128</item>
+        <item>itf</item>
+    </string-array>
+</resources>
